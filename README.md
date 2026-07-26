@@ -18,15 +18,6 @@ This repository documents my journey from CCNA beginner to Network Automation En
 
 ---
 
-## My Background
-
-- Age: 32
-- Current role: Sewing Machine Operator (earning to fund my studies)
-- Available study time: Weekdays 9 PM - 11 PM, Saturdays 6 PM - 10 PM, Sundays (flexible)
-- Tools: Ubuntu PC, Packet Tracer, GNS3, Python
-
----
-
 ## Completed Labs
 
 ### ✅ Lab 1: Basic 3-PC Network with Router
@@ -43,24 +34,9 @@ This repository documents my journey from CCNA beginner to Network Automation En
 
 ---
 
-## My CCNA Study Schedule
-
-| Day | Time | Activity |
-|-----|------|----------|
-| Mon-Fri | 9 PM - 11 PM | Theory + Labs |
-| Sat | 6 PM - 10 PM | CCNA Class Review + Practice |
-| Sun | Flexible | GNS3 Labs or Offline Study |
-
----
-
 ## Tools I Use
 
 - **Packet Tracer** - CCNA topology building
-- **GNS3** - Advanced labs
-- **Ubuntu** - Development environment
-- **Python 3** - Automation scripts
-- **VS Code** - Code editor
-- **Netmiko** - Network automation library
 
 ---
 
@@ -77,8 +53,7 @@ This repository documents my journey from CCNA beginner to Network Automation En
 
 ## Connect With Me
 
-[LinkedIn](#) *(Add your LinkedIn when you create it)*  
-[GitHub](#) *(This is my GitHub!)*
+[LinkedIn](https://www.linkedin.com/in/kushan-sameera-675995214/)
 
 ---
 
