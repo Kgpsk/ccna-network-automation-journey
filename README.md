@@ -21,9 +21,9 @@ This repository documents my journey from CCNA beginner to Network Automation En
 ## Completed Labs
 
 ### ✅ Lab 1: Basic 3-PC Network with Router
-- [Lab Summary](02-basic-network-lab/README.md)
-- [Errors & Fixes](02-basic-network-lab/errors-and-fixes.md)
-- [Router Configuration](02-basic-network-lab/router-config.txt)
+- [Lab Summary](ccna-network-automation-journey/README.md)
+- [Errors & Fixes](ccna-network-automation-journey/errors-and-fixes.md)
+- [Router Configuration](ccna-network-automation-journey/router-config.txt)
 
 **Key Learnings:**
 - OSI 7 Layers
