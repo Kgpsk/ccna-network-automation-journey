@@ -143,9 +143,4 @@ WHAT I LEARNED FROM THIS LAB
 | ARP | Resolves IP to MAC; responsible for initial ping timeouts. |
 | no shutdown | Router interfaces are disabled by default and require manual activation. |
 | Documentation | Always document errors and fixes—this is standard professional practice. |
-NEXT STEPS
- * Write a Python script to SSH into the router.
- * Automate show ip interface brief via code.
- * Automate VLAN creation.
- * Implement automated router configuration backups.
 
