@@ -1,0 +1,82 @@
+============================================================
+LAB 1: BASIC 3-PC NETWORK - ROUTER CONFIGURATION
+============================================================
+
+Device: Cisco 1941 Router
+Hostname: Router0
+
+------------------------------------------------------------
+ROUTER CONFIGURATION (Full Running Config)
+------------------------------------------------------------
+
+Router> enable
+Router# configure terminal
+
+! ==========================================
+! CONFIGURE GIGABIT ETHERNET 0/0
+! Connected to Switch0 (LAN side - Network A)
+! ==========================================
+Router(config)# interface gig0/0
+Router(config-if)# ip address 192.168.1.1 255.255.255.0
+Router(config-if)# no shutdown
+Router(config-if)# description *** CONNECTED TO SWITCH0 - NETWORK A ***
+Router(config-if)# exit
+
+! ==========================================
+! CONFIGURE GIGABIT ETHERNET 0/1
+! Connected to PC2 (Network B)
+! ==========================================
+Router(config)# interface gig0/1
+Router(config-if)# ip address 192.168.2.1 255.255.255.0
+Router(config-if)# no shutdown
+Router(config-if)# description *** CONNECTED TO PC2 - NETWORK B ***
+Router(config-if)# exit
+
+! ==========================================
+! SAVE CONFIGURATION
+! ==========================================
+Router(config)# end
+Router# write memory
+Router# show ip interface brief
+
+! ==========================================
+! VERIFICATION
+! ==========================================
+! Expected output for 'show ip interface brief':
+! 
+! Interface              IP-Address      OK? Method Status                Protocol
+! GigabitEthernet0/0     192.168.1.1     YES manual up                    up
+! GigabitEthernet0/1     192.168.2.1     YES manual up                    up
+! Vlan1                  unassigned      YES unset administratively down  down
+
+! ==========================================
+! NETWORK TOPOLOGY SUMMARY
+! ==========================================
+!
+!         PC0                  PC1
+!     192.168.1.10         192.168.1.20
+!          |                    |
+!          +----[Switch0]------+
+!                    |
+!              [Router Gig0/0]
+!              192.168.1.1
+!                    |
+!              [Router Gig0/1]
+!              192.168.2.1
+!                    |
+!                  PC2
+!              192.168.2.10
+
+! ==========================================
+! DEVICE CONFIGURATION SUMMARY
+! ==========================================
+!
+! | Device        | IP Address      | Subnet Mask     | Gateway       | Connected To      |
+! |---------------|-----------------|-----------------|---------------|-------------------|
+! | PC0           | 192.168.1.10    | 255.255.255.0   | 192.168.1.1   | Switch0           |
+! | PC1           | 192.168.1.20    | 255.255.255.0   | 192.168.1.1   | Switch0           |
+! | PC2           | 192.168.2.10    | 255.255.255.0   | 192.168.2.1   | Router Gig0/1     |
+! | Router Gig0/0 | 192.168.1.1     | 255.255.255.0   | N/A           | Switch0           |
+! | Router Gig0/1 | 192.168.2.1     | 255.255.255.0   | N/A           | PC2               |
+
+! ============================================================
